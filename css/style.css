@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	background-color: #3d5a80;
+	min-height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+.navbar-brand {
+	color: #fafafa;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	font-size: 2rem;
+}
+
+.navbar-toggler {
+	background-color: lightgray;
+}
+
+.nav-item .nav-link {
+	color: #fafafa;
+}
+
+.nav-item .nav-link:hover {
+	color: black;
+}
+
+.heroHome {
+	background-image: url('../imgs/bg-home.jpg');
+	background-size: cover;
+	background-position: top;
+	height: 50vh;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.heroHome h1 {
+	color: #fafafa;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	line-height: 3rem;
+}
+
+.heroHome p {
+	color: #e1e1e1;
+	font-size: 0.9rem;
+}
+
+.heroHome button {
+	border: none;
+	border-radius: 7px;
+	padding: 5px 10px;
+	color: black;
+	font-weight: 600;
+	background-color: #ffb627;
+	font-size: 1rem;
+}
+
+.heroHome button:hover {
+	background-color: #ee6c4d;
+	color: black;
+	font-weight: 600;
+}
+
+.statsHome {
+	background-color: #3d5a80;
+	text-align: center;
+	color: #fafafa;
+	padding: 30px 0px;
+}
+
+.statsHome p {
+	font-size: 2rem;
+}
+
+.statsHome span {
+	color: #ee6c4d;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.whatsApp {
+	width: 60px;
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+}
