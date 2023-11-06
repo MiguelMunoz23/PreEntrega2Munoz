@@ -46,6 +46,13 @@ nav li a:hover {
 	background-color: lightgray;
 }
 
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
 .heroHome {
 	background-image: url('../imgs/bg-home.jpg');
 	background-size: cover;
@@ -104,7 +111,7 @@ footer {
 	align-items: center;
 	text-align: center;
 	height: calc(100vh - 74px - 42.8px);
-	padding: 10px 30px;
+	padding: 50px 30px;
 	gap: 20px;
 }
 
@@ -114,11 +121,47 @@ footer {
 }
 
 .construction img {
-	width: 100%;
+	max-height: 50%;
+	max-width: 100%;
 }
 
 .construction p {
 	font-size: 1.2rem;
+}
+
+form {
+	padding: 20px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: black;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+textarea {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.button {
+	background-color: #ee6c4d;
+	color: black;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	margin-right: 20px;
 }
 
 .whatsApp {
@@ -128,14 +171,11 @@ footer {
 	right: 30px;
 }
 
-@media (min-width: 600px) {
-	.construction img {
-		width: 75%;
-	}
-}
-
-@media (min-width: 900px) {
-	.construction img {
-		width: 50%;
+@media (min-width: 768px) {
+	.heroHome p {
+		color: #e1e1e1;
+		font-size: 0.9rem;
+		font-weight: 600;
+		max-width: 50%;
 	}
 }
