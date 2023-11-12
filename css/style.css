@@ -49,12 +49,16 @@ nav li a:hover {
 h1 {
 	font-size: 2.5rem;
 	font-weight: bold;
-	color: black;
+	color: #fafafa;
 }
 
 h2 {
 	font-size: 1.8rem;
 	font-weight: 600;
+}
+
+p {
+	font-size: 1rem;
 }
 
 .heroHome {
@@ -80,7 +84,6 @@ h2 {
 
 .heroHome p {
 	color: #e1e1e1;
-	font-size: 0.9rem;
 	font-weight: 600;
 }
 
@@ -121,6 +124,7 @@ footer {
 }
 
 .construction h1 {
+	color: black;
 	font-size: 2.5rem;
 	font-weight: 600;
 }
@@ -143,6 +147,16 @@ footer {
 	justify-content: start;
 	align-items: end;
 	padding-bottom: 20px;
+}
+
+.aboutUs h2 {
+	text-align: center;
+	padding: 1.5rem 0rem;
+}
+
+.aboutUs p {
+	text-align: start;
+	padding: 0rem 2rem 1.5rem 2rem;
 }
 
 form {
@@ -196,8 +210,41 @@ textarea {
 @media (min-width: 768px) {
 	.heroHome p {
 		color: #e1e1e1;
-		font-size: 0.9rem;
 		font-weight: 600;
 		max-width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 2.9rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.heroHome h1 {
+		font-size: 2.5rem;
+		line-height: 4rem;
+	}
+
+	.heroHome p {
+		font-size: 1.2rem;
+	}
+
+	.heroHome button {
+		font-size: 1.5rem;
+	}
+
+	.aboutUs p {
+		padding: 0rem 4rem 2rem 4rem;
+	}
+
+	footer p {
+		font-size: 0.8rem;
 	}
 }
