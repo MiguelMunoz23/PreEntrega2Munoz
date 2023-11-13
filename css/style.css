@@ -17,6 +17,21 @@ header {
 	top: 0;
 }
 
+.company {
+	display: flex;
+	align-items: center;
+}
+
+.company img {
+	width: 50px;
+	margin-right: 10px;
+}
+
+.logo {
+	width: 50px;
+	margin-right: 10px;
+}
+
 .navbar-brand {
 	color: #fafafa;
 	font-weight: 500;
