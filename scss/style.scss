@@ -1,0 +1,268 @@
+$clr_white: #fafafa;
+$clr_black: black;
+$clr_gray: #e1e1e1;
+$clr_orange: #ee6c4d;
+$bg_clr: #3d5a80;
+$bg_btn: #ffb627;
+
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	background-color: $bg_clr;
+	min-height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+.company {
+	display: flex;
+	align-items: center;
+	img {
+		width: 50px;
+		margin-right: 5px;
+	}
+}
+
+.navbar-brand {
+	color: $clr_white;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	font-size: 1.7rem;
+}
+
+.fontsNav {
+	font-size: 1rem;
+}
+
+nav {
+	li {
+		a {
+			text-decoration: none;
+			margin: 5px;
+			line-height: 40px;
+			color: $clr_white;
+			padding: 5px;
+			border-radius: 10px;
+			&:hover {
+				color: $clr_black;
+				background-color: $clr_white;
+			}
+		}
+	}
+}
+
+.navbar-toggler {
+	background-color: $clr_gray;
+}
+
+footer {
+	font-size: 0.8rem;
+	padding: 10px 0px;
+	background-color: $bg_clr;
+	color: $clr_white;
+	height: calc(0.8rem + 30px);
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: $clr_white;
+}
+h2 {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+h3 {
+	font-size: 1.5rem;
+	color: $bg_clr;
+	font-weight: bold;
+	text-decoration: underline;
+}
+p {
+	font-size: 1rem;
+}
+button {
+	border: none;
+	border-radius: 7px;
+	padding: 5px 10px;
+	color: $clr_black;
+	font-weight: 600;
+	background-color: $bg_btn;
+	font-size: 1rem;
+	&:hover {
+		background-color: $clr_orange;
+		color: $clr_black;
+		font-weight: 600;
+	}
+}
+
+.heroHome {
+	background-image: url('../imgs/bg-home.jpg');
+	background-size: cover;
+	background-position: top;
+	height: calc(100vh - 76px - 42.8px);
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	h1 {
+		color: $clr_white;
+		font-size: 2rem;
+		font-weight: bold;
+		letter-spacing: 0.2rem;
+		line-height: 3rem;
+		text-align: start;
+	}
+	p {
+		color: $clr_gray;
+		font-weight: 600;
+	}
+}
+
+.construction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: calc(100vh - 74px - 42.8px);
+	padding: 50px 30px;
+	gap: 20px;
+	h1 {
+		color: $clr_black;
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+	img {
+		max-height: 50%;
+		max-width: 100%;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+.banner {
+	background-image: url('../imgs/banner.jpg');
+	background-size: cover;
+	background-position: top;
+	height: 25vh;
+	display: flex;
+	justify-content: start;
+	align-items: end;
+	padding-bottom: 20px;
+}
+
+.aboutUs {
+	h2 {
+		text-align: center;
+		padding: 1.5rem 0rem;
+	}
+	p {
+		text-align: start;
+		padding: 0rem 2rem 1.5rem 2rem;
+	}
+}
+
+form {
+	padding: 20px 0px;
+}
+
+label {
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: $clr_black;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.contactInfo {
+	p {
+		color: $clr_orange;
+		font-weight: 600;
+	}
+}
+
+.whatsApp {
+	width: 60px;
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+}
+
+@media (min-width: 768px) {
+	.heroHome {
+		p {
+			color: $clr_gray;
+			font-weight: 600;
+			max-width: 50%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 2.9rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	.heroHome {
+		h1 {
+			font-size: 2.5rem;
+			line-height: 4rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+		button {
+			font-size: 1.5rem;
+		}
+	}
+	.aboutUs {
+		p {
+			padding: 0rem 4rem 2rem 4rem;
+		}
+	}
+	footer {
+		p {
+			font-size: 0.8rem;
+		}
+	}
+}
