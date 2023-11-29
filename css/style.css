@@ -9,6 +9,42 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #3d5a80;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: black;
+  font-weight: 600;
+  background-color: #ffb627;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #ee6c4d;
+  color: black;
+  font-weight: 600;
+}
+
 header {
   background-color: #3d5a80;
   min-height: 70px;
@@ -53,49 +89,15 @@ nav li a:hover {
   background-color: #e1e1e1;
 }
 
-footer {
-  font-size: 0.8rem;
-  padding: 10px 0px;
-  background-color: #3d5a80;
-  color: #fafafa;
-  height: calc(0.8rem + 30px);
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fafafa;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.5rem;
-  color: #3d5a80;
-  font-weight: bold;
-}
-
-p {
-  font-size: 1rem;
-}
-
-button {
-  border: none;
-  border-radius: 7px;
-  padding: 5px 10px;
-  color: black;
-  font-weight: 600;
-  background-color: #ffb627;
-  font-size: 1rem;
-}
-button:hover {
-  background-color: #ee6c4d;
-  color: black;
-  font-weight: 600;
+.banner {
+  background-image: url("../imgs/banner.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 25vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-bottom: 20px;
 }
 
 .heroHome {
@@ -121,17 +123,6 @@ button:hover {
   font-weight: 600;
 }
 
-.banner {
-  background-image: url("../imgs/banner.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 25vh;
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  padding-bottom: 20px;
-}
-
 .aboutUs h2 {
   text-align: center;
   padding: 1.5rem 0rem;
@@ -151,10 +142,13 @@ button:hover {
   font-size: 0.8rem;
 }
 .productsCard h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .productsCard button {
   font-size: 0.8rem;
+}
+.productsCard h3 {
+  font-size: 1rem;
 }
 
 .servicesCard {
@@ -181,6 +175,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.contactInfo p {
+  color: #ee6c4d;
+  font-weight: 600;
 }
 
 form {
@@ -217,16 +216,20 @@ textarea {
   margin-bottom: 15px;
 }
 
-.contactInfo p {
-  color: #ee6c4d;
-  font-weight: 600;
-}
-
 .whatsApp {
   width: 60px;
   position: fixed;
   bottom: 40px;
   right: 30px;
+}
+
+footer {
+  font-size: 0.8rem;
+  padding: 10px 0px;
+  background-color: #3d5a80;
+  color: #fafafa;
+  height: calc(0.8rem + 30px);
+  text-align: center;
 }
 
 @media (min-width: 760px) {

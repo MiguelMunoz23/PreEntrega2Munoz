@@ -1,0 +1,47 @@
+header {
+	background-color: $bg_clr;
+	min-height: 70px;
+	position: sticky;
+	top: 0;
+}
+
+.company {
+	display: flex;
+	align-items: center;
+	img {
+		width: 50px;
+		margin-right: 5px;
+	}
+}
+
+.navbar-brand {
+	color: $clr_white;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	font-size: 1.7rem;
+}
+
+.fontsNav {
+	font-size: 1rem;
+}
+
+nav {
+	li {
+		a {
+			text-decoration: none;
+			margin: 5px;
+			line-height: 40px;
+			color: $clr_white;
+			padding: 5px;
+			border-radius: 10px;
+			&:hover {
+				color: $clr_black;
+				background-color: $clr_white;
+			}
+		}
+	}
+}
+
+.navbar-toggler {
+	background-color: $clr_gray;
+}
