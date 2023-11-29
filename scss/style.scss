@@ -87,7 +87,6 @@ h3 {
 	font-size: 1.5rem;
 	color: $bg_clr;
 	font-weight: bold;
-	text-decoration: underline;
 }
 p {
 	font-size: 1rem;
@@ -130,29 +129,6 @@ button {
 	}
 }
 
-.construction {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	height: calc(100vh - 74px - 42.8px);
-	padding: 50px 30px;
-	gap: 20px;
-	h1 {
-		color: $clr_black;
-		font-size: 2.5rem;
-		font-weight: 600;
-	}
-	img {
-		max-height: 50%;
-		max-width: 100%;
-	}
-	p {
-		font-size: 1.2rem;
-	}
-}
-
 .banner {
 	background-image: url('../imgs/banner.jpg');
 	background-size: cover;
@@ -173,6 +149,51 @@ button {
 		text-align: start;
 		padding: 0rem 2rem 1.5rem 2rem;
 	}
+}
+
+.productsCard {
+	img {
+		padding: 20px 40px 0px 40px;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	button {
+		font-size: 0.8rem;
+	}
+}
+
+.servicesCard {
+	display: flex;
+	flex-direction: row;
+
+	img {
+		max-width: 40%;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	h3 {
+		font-size: 0.8rem;
+	}
+	button {
+		font-size: 0.8rem;
+	}
+}
+
+.servicesCardBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 form {
@@ -223,12 +244,48 @@ textarea {
 	right: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
 	.heroHome {
 		p {
 			color: $clr_gray;
 			font-weight: 600;
 			max-width: 50%;
+		}
+	}
+
+	.productsCard {
+		h2 {
+			font-size: 1.8rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+		button {
+			font-size: 1rem;
+		}
+	}
+
+	.servicesCard {
+		display: flex;
+		flex-direction: row;
+
+		img {
+			max-width: 40%;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 0.9rem;
+		}
+		h3 {
+			font-size: 0.9rem;
+		}
+		button {
+			font-size: 0.9rem;
 		}
 	}
 }

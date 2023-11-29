@@ -77,7 +77,6 @@ h3 {
   font-size: 1.5rem;
   color: #3d5a80;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 p {
@@ -122,29 +121,6 @@ button:hover {
   font-weight: 600;
 }
 
-.construction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: calc(100vh - 74px - 42.8px);
-  padding: 50px 30px;
-  gap: 20px;
-}
-.construction h1 {
-  color: black;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-.construction img {
-  max-height: 50%;
-  max-width: 100%;
-}
-.construction p {
-  font-size: 1.2rem;
-}
-
 .banner {
   background-image: url("../imgs/banner.jpg");
   background-size: cover;
@@ -163,6 +139,48 @@ button:hover {
 .aboutUs p {
   text-align: start;
   padding: 0rem 2rem 1.5rem 2rem;
+}
+
+.productsCard img {
+  padding: 20px 40px 0px 40px;
+}
+.productsCard h2 {
+  font-size: 1.2rem;
+}
+.productsCard p {
+  font-size: 0.8rem;
+}
+.productsCard h3 {
+  font-size: 1rem;
+}
+.productsCard button {
+  font-size: 0.8rem;
+}
+
+.servicesCard {
+  display: flex;
+  flex-direction: row;
+}
+.servicesCard img {
+  max-width: 40%;
+}
+.servicesCard h2 {
+  font-size: 1.2rem;
+}
+.servicesCard p {
+  font-size: 0.8rem;
+}
+.servicesCard h3 {
+  font-size: 0.8rem;
+}
+.servicesCard button {
+  font-size: 0.8rem;
+}
+
+.servicesCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 form {
@@ -211,11 +229,42 @@ textarea {
   right: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .heroHome p {
     color: #e1e1e1;
     font-weight: 600;
     max-width: 50%;
+  }
+  .productsCard h2 {
+    font-size: 1.8rem;
+  }
+  .productsCard p {
+    font-size: 1rem;
+  }
+  .productsCard h3 {
+    font-size: 1.5rem;
+  }
+  .productsCard button {
+    font-size: 1rem;
+  }
+  .servicesCard {
+    display: flex;
+    flex-direction: row;
+  }
+  .servicesCard img {
+    max-width: 40%;
+  }
+  .servicesCard h2 {
+    font-size: 1.5rem;
+  }
+  .servicesCard p {
+    font-size: 0.9rem;
+  }
+  .servicesCard h3 {
+    font-size: 0.9rem;
+  }
+  .servicesCard button {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 1200px) {
