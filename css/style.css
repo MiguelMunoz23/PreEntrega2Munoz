@@ -132,8 +132,12 @@ nav li a:hover {
   padding: 0rem 2rem 1.5rem 2rem;
 }
 
+.productsCard {
+  min-height: 500px;
+}
 .productsCard img {
   padding: 20px 40px 0px 40px;
+  max-height: 200px;
 }
 .productsCard h2 {
   font-size: 1.2rem;
